@@ -21,8 +21,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     //functions
     @IBAction func enterButton(_ sender: Any) {
-        var name = nameEnter.text!
-        welcomeLabel.text = "Hello \(name)"
+        let name = nameEnter.text!
+        welcomeLabel.text = "Hello \(name)!"
         nameEnter.resignFirstResponder()
     }
     
