@@ -27,6 +27,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        let name = nameEnter.text!
+        welcomeLabel.text = "Hello \(name)!"
         nameEnter.resignFirstResponder()
+        return true;
     }
 }
